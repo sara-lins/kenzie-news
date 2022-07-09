@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&family=Roboto:wght@300;400;500&display=swap');
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: #E0E0E0;
+    gap: 15px;
+}
+
+header {
+    background-color: #5163D3;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 5px 0 5px 0;
+}
+
+header>figure>img {
+    width: 30px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-news {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.div-news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+
+.div-info {
+    position: absolute;
+    color: white;
+    width: 50%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 1;
+    padding: 0px 10px 10px 20px;
+    gap: 10px;
+}
+
+.fig-news {
+    width: 100%
+}
+
+.tag-info-main {
+    background-color: white;
+    color: #5163D3;
+    width: 30%;
+    font-size: 0.625rem;
+    padding: 0.300rem 0.625rem 0.300rem 0.625rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.titule-info-main {
+    font-family: 'Roboto Slab';
+}
+
+.source-info-main {
+    font-family: 'Roboto';
+    font-size: 0.75rem;
+}
+
+.div-news>figure {
+    width: 200%;
+
+}
+
+/* imagem card-main */
+.img-cardMain {
+    width: 100%;
+    opacity: 0.9;
+}
+
+/* seção cards */
+.img-card {
+    display: none;
+}
+
+.cards-news {
+    padding-bottom: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 40px;
+}
+
+.cards-news > ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.cards-news > ul > li {
+    width: 100%;
+    max-width: 580px;
+}
+
+.div-info-card {
+    width: 100%;
+    height: 18.5rem;
+    padding: 20px 10px;
+    box-shadow: 1px 2px 7px rgb(207, 205, 205);
+    background-color: #EEEEEE;
+    border-radius: 10px;
+}
+
+.p-tag-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: #5163D3;
+    background-color: #D7E4FB;
+    width: 6rem;
+    height: 1.5rem;
+    font-size: 0.75rem;
+    border-radius: 5px;
+    box-shadow: 1px 2px 7px rgb(207, 205, 205);
+}
+
+.div-info-card > h3 {
+    color: #5163D3;
+    width: 100%;
+    height: 7rem;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    padding-top: 10px;
+}
+
+.pDescription {
+    height: 6rem;
+    overflow: hidden;
+    width: 100%;
+    font-size: 0.75rem;
+}
+
+.pSource {
+    width: 100%;
+    height: 1rem;
+    font-weight: 300;
+    font-size: 0.625rem;
+    color: #1B1C1E;
+    padding-top: 10px;
+}
+
+/* footer */
+
+footer {
+    background-color: #EEEEEE;
+    font-size: 0.50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.75rem;
+}
+
+@media (min-width: 481px) {
+
+    body {
+        gap: 40px;
+    }
+
+    main {
+        gap: 30px;
+    }
+
+    .main-news {
+        width: 100%;
+        height: 350px;
+    }
+   
+    .img-cardMain {
+        width: 50%;
+    }
+
+    .div-info {
+        width: 100%;
+        height: 330px;
+        padding-bottom: 20px;
+    }
+
+    .cards-news {
+        padding-top: 20px;
+    }
+
+    .div-info-card {
+        height: 15rem;
+        padding: 20px 20px;
+    }
+
+    
+    .div-info-card > h3 {
+        height: 5.5rem;
+        padding-top: 10px;
+    }
+
+    .pDescription {
+        height: 4.5rem;
+    }
+
+    
+    footer {
+        font-size: 0.75rem;
+        height: 3rem;
+    }
+}
+
+@media (min-width: 736px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .main-news {
+        width: 60%;
+    }
+
+    .div-news > figure {
+        width: 10px;
+        
+     }
+    .div-news {
+       display: flex;
+       width: 120%;
+       max-width: 750px;
+       height: 250px;
+       justify-content: center;
+       align-items: center;
+       overflow: hidden;
+       left: 35%;
+       border-radius: 10px;
+       box-shadow: 1px 2px 10px rgb(208, 208, 208);
+       position: inherit;
+    }
+
+    .div-info {
+        width: 50%;
+        max-width: 500px;
+        height: 100%;
+        justify-content: center;
+        background-color: white;
+        color: #5163D3;
+        right: 50%;
+        display: flex;
+        gap: 50px;
+    }
+
+    .img-cardMain {
+        width: 25rem;
+    }
+
+    .cards-news {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .div-info-card > h3 {
+        height: 5.5rem;
+        padding-top: 10px;
+        font-size: 1.1rem;
+    }
+
+    .pDescription {
+        height: 4rem;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .pSource {
+        font-size: 0.800rem;
+    }
+
+    .tag-info-main {
+        background-color: #D7E4FB;
+        color: #5163D3;
+        width: 40%;
+        font-family: 'Roboto Slab', serif;
+    }
+}
+
+@media (min-width: 1001px) {
+
+    header {
+        padding: 10px 0 10px 0;
+    }
+    
+    header>figure>img {
+        width: 50px;
+    }
+
+    .div-news {
+        left: 34%;
+    }
+
+    .cards-news {
+        width: 100%;
+        display: flex;
+        padding: 0;
+    }
+
+    .cards-news > ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .cards-news > ul > li {
+        display: flex;
+        overflow: hidden;
+        height: 270px;
+        border-radius: 10px;
+        box-shadow: 1px 2px 8px rgb(195, 191, 191);
+    }
+
+    .div-info-card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 20px 10px;
+        gap: 5px;
+        border-radius: 0;
+    }
+
+    .fig-card {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .img-card {
+        display: flex;
+        width: 400px;
+        height: 100%;
+    }
+
+    .div-info-card > h3 {
+        font-size: 1rem;
+        height: 6.5rem;
+    }
+
+    .pDescription {
+        height: 5rem;
+        font-size: 0.700rem;
+    }
+
+    .pSource {
+        font-size: 0.600rem;
+    }
+
+    footer {
+        font-size: 1rem;
+        height: 4rem;
+    }
+}
